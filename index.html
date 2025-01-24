@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Página com um menu moderno, minimalista e interativo, utilizando transições suaves e design elegante.">
+      <meta name="keywords" content="menu, navegação, design moderno, minimalismo, interatividade, transição, efeito, web design">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="author" content="Iago Barreto - Designer Gráfico e Desenvolvedor Web">
+      <meta http-equiv="X-Frame-Options" content="deny">
+      <title>Menu Moderno e Minimalista</title>
+      <!-- Arquivo CSS -->
+      <style>
+         /* Reset básico */
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         /* Estilos do corpo */
+         body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+         }
+
+         /* Menu com transição de cor e sublinhado */
+         nav {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 15px;
+            margin: 0 15px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        nav a:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        nav a:hover:before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+         /* Estilos do footer */
+         .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+         }
+
+         /* Estilos principais */
+         .main-content {
+            padding: 50px 20px;
+            text-align: center;
+         }
+
+         .main-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+         }
+
+         .main-content p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+         }
+
+      </style>
+   </head>
+   <body>
+      <!-- Menu de navegação -->
+      <nav>
+         <a href="#">Página Inicial</a>
+         <a href="#">Contato</a>
+         <a href="#">Galeria</a>
+         <a href="#">Quem Somos</a>
+      </nav>
+
+      <!-- Conteúdo principal -->
+      <div class="main-content">
+         <h1>Bem-vindo ao Menu Moderno e Minimalista</h1>
+         <p>Este site apresenta um menu de navegação moderno, com design minimalista e interativo, perfeito para qualquer tipo de aplicação web.</p>
+      </div>
+
+      <!-- Rodapé -->
+      <footer class="footer">
+         <p>© 2025 - Todos os direitos reservados.</p>
+      </footer>
+   </body>
+</html>
