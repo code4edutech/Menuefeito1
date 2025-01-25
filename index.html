@@ -9,87 +9,7 @@
       <meta name="author" content="Iago Barreto - Designer Gráfico e Desenvolvedor Web">
       <meta http-equiv="X-Frame-Options" content="deny">
       <title>Menu Moderno e Minimalista</title>
-      <!-- Arquivo CSS -->
-      <style>
-         /* Reset básico */
-         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-         }
-
-         /* Estilos do corpo */
-         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-         }
-
-         /* Menu com transição de cor e sublinhado */
-         nav {
-            background-color: #333;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-            padding: 10px 15px;
-            margin: 0 15px;
-            position: relative;
-            transition: color 0.3s;
-        }
-        nav a:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #fff;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease;
-        }
-        nav a:hover {
-            color: #f39c12;
-        }
-        nav a:hover:before {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-         /* Estilos do footer */
-         .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-         }
-
-         /* Estilos principais */
-         .main-content {
-            padding: 50px 20px;
-            text-align: center;
-         }
-
-         .main-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #333;
-         }
-
-         .main-content p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 30px;
-         }
-
-      </style>
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
       <!-- Menu de navegação -->
@@ -110,5 +30,7 @@
       <footer class="footer">
          <p>© 2025 - Todos os direitos reservados.</p>
       </footer>
+
+      <script src="./js/script.js"></script>
    </body>
 </html>
